@@ -7,9 +7,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url(/images/background_image_2.gif);
+}
+
 .App div {
   padding: 10px;
-  border: 1px solid black;
+  margin: 10px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -20,10 +26,13 @@
 .left-column {
   grid-column: 1 / span 1;
   text-align: center;
+  background: white;
+  opacity: 0.55;
 }
 
 .right-column {
   grid-column: 2 / span 1;
+  text-align: center;
 }
 
 .footer {
