@@ -1,10 +1,10 @@
+*, *::before *::after {
+
+}
+
 .App {
-  width: 100vw;
+  position: relative;
   height: 100vh;
-  display: grid;
-  grid-template: 0.3fr 1fr 0.2fr / 1fr 1fr;
-  gap: 25px;
-  box-sizing: border-box;
 }
 
 body {
@@ -12,30 +12,22 @@ body {
 }
 
 .App div {
-  padding: 10px;
-  margin: 10px;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid black;
 }
 
 .header {
-  grid-column: 1 / span 2;
   text-align: center;
 }
 
 .left-column {
-  grid-column: 1 / span 1;
-  text-align: center;
-  background: white;
-  opacity: 0.55;
+  position: relative;
+  top: 20px;
+  left: 345px;
+  width: 700px;
+  height: 500px;
 }
-
-.right-column {
-  grid-column: 2 / span 1;
-  text-align: center;
-}
-
-.footer {
-  grid-column: 1 / span 2;
+.left-column h2 {
   text-align: center;
 }
